@@ -6,8 +6,8 @@ import { Quote, MessageSquare } from 'lucide-react'
 
 export default function QuoteBank() {
   return (
-    <section className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 sm:py-28 lg:py-32 relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ export default function QuoteBank() {
         </motion.div>
 
         {/* Quotes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {quotes.map((quote, index) => (
             <motion.div
               key={index}
@@ -34,10 +34,10 @@ export default function QuoteBank() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="relative p-6 rounded-2xl bg-card border border-border hover:border-muted/50 transition-colors group"
+              className="relative p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-muted/50 transition-colors group"
             >
               {/* Quote Icon */}
-              <Quote className="absolute top-4 right-4 w-8 h-8 text-muted/20 group-hover:text-muted/30 transition-colors" />
+              <Quote className="absolute top-6 right-6 w-8 h-8 text-muted/20 group-hover:text-muted/30 transition-colors" />
 
               {/* Topic Tag */}
               <span className="inline-block px-2 py-1 text-xs font-medium rounded-full bg-danger/10 text-danger border border-danger/20 mb-4">

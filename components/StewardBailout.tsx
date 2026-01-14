@@ -21,11 +21,11 @@ const timelineColors: Record<string, ColorKey> = {
 
 export default function StewardBailout() {
   return (
-    <section id="steward" className="py-20 relative">
+    <section id="steward" className="py-24 sm:py-28 lg:py-32 relative">
       {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-danger/5 to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,12 +46,12 @@ export default function StewardBailout() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 rounded-2xl bg-card border border-border"
+          className="mb-16 p-6 sm:p-8 rounded-2xl bg-card border border-border"
         >
           <p className="text-muted-foreground leading-relaxed">{stewardBailout.overview}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Timeline */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,7 @@ export default function StewardBailout() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="p-4 rounded-xl bg-card border border-border hover:border-danger/30 transition-colors"
+                  className="p-5 sm:p-6 rounded-xl bg-card border border-border hover:border-danger/30 transition-colors"
                 >
                   <div className="flex justify-between items-start">
                     <div>
@@ -127,7 +127,7 @@ export default function StewardBailout() {
             </div>
 
             {/* Hospital Closures */}
-            <div className="mt-8 p-6 rounded-xl bg-danger/10 border border-danger/30">
+            <div className="mt-8 p-6 sm:p-8 rounded-xl bg-danger/10 border border-danger/30">
               <h4 className="flex items-center gap-2 text-lg font-bold text-danger mb-4">
                 <XCircle className="w-5 h-5" />
                 Hospitals Lost
@@ -135,10 +135,10 @@ export default function StewardBailout() {
               <p className="text-sm text-muted-foreground mb-4">
                 Despite the massive taxpayer expenditure, these hospitals closed in August 2024, creating "medical deserts" in underserved communities:
               </p>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {stewardBailout.closures.map((hospital, index) => (
-                  <div key={index} className="flex items-center gap-2 text-white">
-                    <span className="w-1.5 h-1.5 rounded-full bg-danger" />
+                  <div key={index} className="flex items-center gap-3 text-white">
+                    <span className="w-1.5 h-1.5 rounded-full bg-danger flex-shrink-0" />
                     {hospital}
                   </div>
                 ))}

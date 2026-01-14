@@ -8,11 +8,11 @@ const conflictIcons = [Scale, FileText, ShieldX, EyeOff]
 
 export default function TransparencyWar() {
   return (
-    <section id="transparency" className="py-20 relative">
+    <section id="transparency" className="py-24 sm:py-28 lg:py-32 relative">
       {/* Background accent */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-money/5 to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,13 +33,13 @@ export default function TransparencyWar() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 rounded-2xl bg-card border border-border"
+          className="mb-16 p-6 sm:p-8 rounded-2xl bg-card border border-border"
         >
           <p className="text-muted-foreground leading-relaxed">{transparencyWar.overview}</p>
         </motion.div>
 
         {/* Conflicts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
           {transparencyWar.conflicts.map((conflict, index) => {
             const Icon = conflictIcons[index]
 
@@ -50,7 +50,7 @@ export default function TransparencyWar() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-card border border-border hover:border-money/30 transition-colors group"
+                className="p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-money/30 transition-colors group"
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-money/10 border border-money/30 flex items-center justify-center flex-shrink-0">
@@ -71,7 +71,7 @@ export default function TransparencyWar() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="p-8 rounded-2xl bg-gradient-to-r from-money/10 to-danger/10 border border-money/30"
+          className="p-8 sm:p-10 lg:p-12 rounded-2xl bg-gradient-to-r from-money/10 to-danger/10 border border-money/30"
         >
           <div className="text-center mb-8">
             <AlertTriangle className="w-12 h-12 text-money mx-auto mb-4" />

@@ -20,8 +20,8 @@ const timelineColors = {
 
 export default function StatePolice() {
   return (
-    <section id="police" className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="police" className="py-24 sm:py-28 lg:py-32 relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,12 +42,12 @@ export default function StatePolice() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 rounded-2xl bg-card border border-border"
+          className="mb-16 p-6 sm:p-8 rounded-2xl bg-card border border-border"
         >
           <p className="text-muted-foreground leading-relaxed">{statePoliceScandale.overview}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Timeline */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -109,7 +109,7 @@ export default function StatePolice() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border hover:border-danger/30 transition-colors"
+                  className="flex items-start gap-3 p-5 sm:p-6 rounded-xl bg-card border border-border hover:border-danger/30 transition-colors"
                 >
                   <span className="w-2 h-2 rounded-full bg-danger mt-2 flex-shrink-0" />
                   <span className="text-muted-foreground">{issue}</span>

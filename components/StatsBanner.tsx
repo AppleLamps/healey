@@ -55,16 +55,16 @@ export default function StatsBanner() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="stats" ref={ref} className="py-20 relative overflow-hidden">
+    <section id="stats" ref={ref} className="py-24 sm:py-28 lg:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-card/50 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-14 lg:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">The Numbers Don't Lie</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ export default function StatsBanner() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {keyStats.map((stat, index) => (
             <motion.div
               key={index}
