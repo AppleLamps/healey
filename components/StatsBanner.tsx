@@ -45,8 +45,10 @@ function AnimatedNumber({
     : displayValue.toFixed(1)
 
   return (
-    <span>
-      {prefix}{formattedValue}{suffix}
+    <span className="inline-flex items-baseline tracking-tight">
+      {prefix && <span className="mr-1">{prefix}</span>}
+      <span className="tabular-nums tracking-tighter">{formattedValue}</span>
+      {suffix && <span className="ml-1">{suffix}</span>}
     </span>
   )
 }
@@ -87,7 +89,7 @@ export default function StatsBanner() {
                 <span className="text-sm font-bold text-danger uppercase tracking-wide">Critical Finding</span>
               </div>
 
-              <div className={`text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 text-gradient-danger`}>
+              <div className="flex flex-col items-center justify-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 text-gradient-danger text-center w-full">
                 <AnimatedNumber
                   value={heroStat.value}
                   prefix={heroStat.prefix}
@@ -129,10 +131,10 @@ export default function StatsBanner() {
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className={`relative p-6 sm:p-8 rounded-xl bg-card border-l-4 ${colorClasses[stat.color as ColorKey].border} border-t border-r border-b border-t-border border-r-border border-b-border overflow-hidden group hover:bg-card-hover transition-all duration-300`}
+              className={`relative p-6 sm:p-8 rounded-xl bg-card border-l-4 ${colorClasses[stat.color as ColorKey].border} border-t border-r border-b border-t-border border-r-border border-b-border overflow-hidden group hover:bg-card-hover transition-all duration-300 h-full flex flex-col justify-between`}
             >
               <div className="relative z-10">
-                <div className={`text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 ${colorClasses[stat.color as ColorKey].text}`}>
+                <div className={`text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 ${colorClasses[stat.color as ColorKey].text}`}>
                   <AnimatedNumber
                     value={stat.value}
                     prefix={stat.prefix}
@@ -140,11 +142,13 @@ export default function StatsBanner() {
                     inView={inView}
                   />
                 </div>
-                <div className="text-base font-semibold text-white mb-1">
-                  {stat.label}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {stat.description}
+                <div>
+                  <div className="text-base font-semibold text-white mb-1">
+                    {stat.label}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.description}
+                  </div>
                 </div>
               </div>
             </motion.div>

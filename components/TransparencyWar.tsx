@@ -46,7 +46,7 @@ export default function TransparencyWar() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-money/30 transition-colors group"
+                className="p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-money/30 transition-colors group h-full"
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-money/10 border border-money/30 flex items-center justify-center flex-shrink-0">
@@ -77,15 +77,15 @@ export default function TransparencyWar() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div>
-              <div className="text-4xl font-bold text-money mb-2">{transparencyWar.ndaStats.amount}</div>
+              <div className="text-4xl font-bold text-money mb-2 tabular-nums">{transparencyWar.ndaStats.amount}</div>
               <div className="text-sm text-muted-foreground">Total Settlement Payouts</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-danger mb-2">{transparencyWar.ndaStats.cases}</div>
+              <div className="text-4xl font-bold text-danger mb-2 tabular-nums">{transparencyWar.ndaStats.cases}</div>
               <div className="text-sm text-muted-foreground">Cases with NDAs</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-white mb-2">{transparencyWar.ndaStats.period}</div>
+              <div className="text-4xl font-bold text-white mb-2 tabular-nums">{transparencyWar.ndaStats.period}</div>
               <div className="text-sm text-muted-foreground">Time Period</div>
             </div>
           </div>

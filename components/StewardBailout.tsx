@@ -109,15 +109,13 @@ export default function StewardBailout() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="p-5 sm:p-6 rounded-xl bg-card border border-border hover:border-danger/30 transition-colors"
+                  className="p-5 sm:p-6 rounded-xl bg-card border border-border hover:border-danger/30 transition-colors flex justify-between items-center gap-4"
                 >
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <div className="font-medium text-white">{cost.item}</div>
-                      <div className="text-sm text-muted-foreground">{cost.note}</div>
-                    </div>
-                    <div className="text-2xl font-bold text-danger">{cost.amount}</div>
+                  <div>
+                    <div className="font-bold text-white text-lg">{cost.item}</div>
+                    <div className="text-sm text-muted-foreground mt-1">{cost.note}</div>
                   </div>
+                  <div className="text-2xl font-bold text-danger whitespace-nowrap tabular-nums">{cost.amount}</div>
                 </motion.div>
               ))}
             </div>

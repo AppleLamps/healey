@@ -52,25 +52,26 @@ export default function EnergyCollapse() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-danger/30 transition-colors"
+                className="p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-danger/30 transition-colors h-full flex flex-col justify-between"
               >
-                <div className="flex items-center justify-between mb-4">
-                  <Wind className="w-8 h-8 text-muted" />
-                  <span className={`px-2 py-1 text-xs font-medium rounded-full ${
-                    failure.status === 'Terminated'
-                      ? 'bg-danger/10 text-danger border border-danger/30'
-                      : 'bg-money/10 text-money border border-money/30'
-                  }`}>
-                    {failure.status}
-                  </span>
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <Wind className="w-8 h-8 text-muted" />
+                    <span className={`px-2 py-1 text-xs font-medium rounded-full ${failure.status === 'Terminated'
+                        ? 'bg-danger/10 text-danger border border-danger/30'
+                        : 'bg-money/10 text-money border border-money/30'
+                      }`}>
+                      {failure.status}
+                    </span>
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-2">{failure.project}</h4>
+                  {failure.capacity !== 'N/A' && (
+                    <div className="text-sm text-muted-foreground mb-2">Capacity: {failure.capacity}</div>
+                  )}
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2">{failure.project}</h4>
-                {failure.capacity !== 'N/A' && (
-                  <div className="text-sm text-muted-foreground mb-2">Capacity: {failure.capacity}</div>
-                )}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 mt-4 pt-4 border-t border-border/50">
                   <DollarSign className="w-4 h-4 text-danger" />
-                  <span className="text-xl font-bold text-danger">{failure.penalty}</span>
+                  <span className="text-xl font-bold text-danger tabular-nums">{failure.penalty}</span>
                 </div>
               </motion.div>
             ))}
@@ -94,7 +95,7 @@ export default function EnergyCollapse() {
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true }} h-full
                 transition={{ delay: index * 0.1 }}
                 className="flex items-start gap-3 p-5 sm:p-6 rounded-xl bg-card border border-border"
               >
