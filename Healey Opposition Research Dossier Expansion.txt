@@ -1,0 +1,268 @@
+﻿MEMORANDUM: OPPOSITION RESEARCH DOSSIER – GOVERNOR MAURA HEALEY (JAN 2023 – JAN 2026)
+TO: STRATEGY DIRECTORATE
+FROM: FORENSIC POLITICAL RESEARCH UNIT
+DATE: JANUARY 14, 2026
+SUBJECT: COMPREHENSIVE VULNERABILITY ASSESSMENT & OPPOSITION FILE: GOVERNOR MAURA HEALEY
+CLASSIFICATION: CONFIDENTIAL / EYES ONLY
+PROJECT ID: BLUE-WINTER-26
+________________
+1. Executive Threat Assessment
+1.1. Strategic Overview
+This dossier constitutes an exhaustive forensic audit of the Maura Healey administration, covering the period from her inauguration in January 2023 through January 14, 2026. The investigation synthesizes primary state documents, audit reports, and critical press coverage to construct a unified theory of the administration’s governance style: reactive crisis management masking systemic administrative negligence.
+The central finding of this research is that Governor Healey’s tenure has been defined by a pattern of ignoring early warning indicators in critical sectors—specifically housing, healthcare, and energy—until they metastasize into fiscal emergencies that ostensibly require the suspension of standard procurement laws and the massive infusion of taxpayer capital. This "governance by emergency" has resulted in a precarious fiscal outlook for the Commonwealth, characterized by a depleted rainy-day fund, an opaque "shell game" regarding migrant shelter costs, and a chaotic energy policy heavily reliant on failing offshore wind contracts.
+The administration’s curated image of technocratic competence is contradicted by the operational reality on the ground. From the collapse of Steward Health Care to the persistent safety failures of the MBTA and the ethical rot within the State Police, the administration has consistently prioritized narrative control over structural reform.
+Top 5 Strategic Vulnerabilities:
+1. The "Billion Dollar" Shelter Sinkhole & Fiscal Shell Game: The administration has presided over a shelter crisis that is projected to cost taxpayers over $1.8 billion across two fiscal years. The vulnerability lies not just in the cost, but in the deceptive accounting practices used to hide it. By shifting migrants from the Emergency Assistance (EA) ledger to the HomeBASE program, the administration has artificially suppressed shelter census numbers while exploding HomeBASE spending by over 900%, effectively hiding the long-term liability.1
+2. The Steward Health Care Bailout: Despite clear indicators of Steward’s insolvency dating back to 2015, the administration failed to exercise regulatory oversight until bankruptcy was imminent in 2024. The resulting "rescue" plan commits an estimated $700 million in public funds to facilitate hospital transitions, including massive payouts to facilitate eminent domain seizures, effectively using taxpayer money to clean up a private equity disaster.4
+3. The Transparency War: Governor Healey has engaged in an unprecedented and legally dubious conflict to prevent State Auditor Diana DiZoglio from auditing the legislature and executive agencies. This resistance, which continues despite a clear 2024 ballot mandate from voters, directly contradicts her campaign promises of transparency and suggests a concerted effort to conceal administrative inefficiencies.6
+4. Judicial Integrity & The State Police Scandal: The administration’s slow, tepid response to the Karen Read murder trial revelations—specifically the misogynistic conduct of Lead Investigator Michael Proctor—has caused irreparable harm to public trust in the justice system. The "disgust" expressed by the Governor came only after the scandal became a national spectacle, and the rot extends beyond a single trooper to a supervisory culture that the administration has been slow to purge.8
+5. Energy Policy Collapse: The administration’s signature "Commonwealth Wind" initiatives have crumbled under economic pressure, leading to contract terminations, massive penalty payments, and a 2025 federal suspension of key projects due to national security concerns. The failure to deliver affordable offshore wind energy threatens to spike ratepayer costs significantly by 2027.11
+1.2. Polling & Public Sentiment Trends (2023–2025)
+While Governor Healey maintains a net positive approval rating, a forensic analysis of polling data reveals deep structural weaknesses in her coalition, particularly among working-class voters who bear the brunt of the "cost of living" crisis.
+Approval Erosion Among the Working Class:
+Polling data from UMass Amherst and other independent bodies indicates a significant bifurcation in the Governor’s support. While she retains support among wealthy, college-educated suburbanites, her approval ratings have plummeted among residents earning less than $40,000 per year and those with a high school education or less. This demographic segment, traditionally a Democratic stronghold, is increasingly alienated by the perception that state resources are being prioritized for migrants over long-term residents.14
+Issue-Specific Vulnerabilities:
+* Housing Crisis: Disapproval remains high at 56%, driven by soaring rents and the visible failure of the administration to increase supply, despite the massive spending on shelter for non-citizens.14
+* Migrant/Refugee Handling: A majority (52%) disapprove of the Governor’s handling of the migrant crisis. This dissatisfaction is correlated with the opacity of the costs and the impact on local communities.14
+* The "Trump Factor" vs. Healey: While Donald Trump remains unpopular in Massachusetts overall, the intensity of opposition to Healey among Republicans and right-leaning Independents is hardening. More dangerously for Healey, a generic "moderate" challenger or a specific candidate like Mike Kennealy (former Baker cabinet member) or Brian Shortsleeve polls competitively, suggesting that a non-MAGA Republican could exploit Healey's fiscal vulnerabilities.15
+2026 Outlook:
+The data suggests that Healey is vulnerable to a "competence" argument. If the 2026 election becomes a referendum on the cost of living and the fiscal management of the shelter and healthcare crises, her current margins could evaporate. The "enthusiasm gap" is real; while few Democrats "strongly disapprove," equally few "strongly approve," indicating soft support that could be eroded by a well-funded adversarial campaign.15
+________________
+2. The Migrant Shelter Crisis: Fiscal & Operational Malfeasance
+The administration’s handling of the migrant shelter crisis represents the most significant fiscal and operational failure of the term. The investigation reveals a systematic failure to plan, followed by an unlawful reliance on emergency powers to award lucrative contracts to political donors, and finally, a deceptive accounting strategy to hide the true costs from the public.
+2.1. The "Foreseeability" Failure and Unlawful Procurement
+The administration’s primary defense for bypassing standard procurement laws—specifically Chapter 30B—was that the surge in migrant arrivals was an "unforeseen emergency." A forensic timeline of the data proves this defense to be factually incorrect and legally indefensible.
+The Timeline of Negligence:
+* January 2023: Data clearly indicated that the demand for Emergency Assistance (EA) shelter had surpassed the system’s baseline capacity of 3,600 units. The trend line was vertical and unmistakable.17
+* The Inaction Gap: Despite this data, the Executive Office of Housing and Livable Communities (EOHLC) failed to initiate standard procurement processes for food and transportation services for eight months (January to August 2023).17
+* August 2023: Governor Healey declares a "State of Emergency".18 EOHLC uses this declaration to justify awarding massive no-bid contracts, claiming there was no time for a competitive process.
+The Auditor’s Finding:
+The Office of the State Auditor (OSA) formally concluded in its audit that the situation was "foreseeable" and "well-known" long before the emergency declaration. Consequently, the use of emergency procurement procedures to award millions in contracts was deemed "improper and unlawful".17 The administration did not just fail to plan; they actively ignored the data to create a pretext for emergency spending powers.
+2.2. No-Bid Vendor Deep Dive: The "Kickback" Network?
+The investigation identified specific vendors who benefited disproportionately from these unlawful no-bid contracts. The nexus between these vendors, their contract terms, and their political activity raises serious ethical questions.
+Vendor A: Spinelli Ravioli Manufacturing Company (East Boston)
+This contract represents the clearest evidence of fiscal negligence and potential pay-to-play.
+* Contract Value: $10 Million (Initial No-Bid Award).17
+* Scope: Providing meals for the entire statewide shelter system.
+* The "Flat Rate" Scandal: During initial discussions, Spinelli offered EOHLC a "flat rate" option for food delivery, which would have capped costs. EOHLC officials ignored this offer and did not even inquire about the potential savings. Instead, they agreed to a variable rate that resulted in higher costs for taxpayers.20
+* Overpayments: The lack of oversight was so severe that the state overpaid on 9.6% of all deliveries.19
+* Duration: The contract was locked in for eight months (Aug 2023 – Mar 2024), a duration the Auditor called "inordinately long" and inconsistent with emergency best practices, which typically allow for only short-term stop-gaps while competitive bidding occurs.17
+* Political Connection: Spinelli is an East Boston institution. The owner has donated over $10,000 to the Healey and Driscoll campaigns since 2019, including a $1,000 donation in November 2024, during the active contract period.21
+Vendor B: Mercedes Cab Company / Pilgrim Transit
+* Contract Value: Initially $2.8 Million, amended to $3.8 Million, then further amended by another $3.0 Million, totaling nearly $7 Million in no-bid transportation work.17
+* Scope: Transporting migrants between shelters and appointments.
+* Irregularities: The serial amendments extended the contract through June 2024 without ever subjecting it to a competitive bid. The Auditor noted that this lack of competition raises concerns about "inflated pricing" and "fairness".19 The administration essentially granted a monopoly on migrant transport to a single vendor for nearly a year.
+Vendor C: Valley Opportunity Council & Key Food Marketplace
+* The Scheme: The administration awarded millions to the non-profit Valley Opportunity Council (VOC) to run shelter sites. VOC then utilized a $945,865 subcontract to purchase meals from Key Food Marketplace.
+* The Conflict: The owner of Key Food Marketplace sits on the Board of Directors of the Valley Opportunity Council. This represents a direct conflict of interest where state funds were funneled to a board member’s private business.
+* Administrative Failure: State officials admitted they only began investigating this arrangement in November 2024, more than a year and a half after the funds began flowing.21
+2.3. The "Cost Shifting" Shell Game: HomeBASE
+Facing intense political pressure to reduce the headline number of families in "Emergency Shelters," the administration adopted a strategy of fiscal displacement. They moved families out of the EA shelter system and into the HomeBASE program, effectively hiding the cost in a different budget line item.
+The Mechanism of Deception:
+* The Shift: Migrants are transitioned out of hotels and given "rental assistance" vouchers funded by HomeBASE. This allows the administration to claim the "shelter census" is dropping.
+* The Cost Per Family: Eligible families receive up to $30,000 in assistance over two years, with a potential third year adding another $15,000.1
+* The Explosion in Spending:
+   * FY 2022: HomeBASE spending was approximately $9.5 Million.
+   * FY 2025: HomeBASE spending is projected to reach $97 Million—a tenfold increase.1
+* Caseload Surge: The HomeBASE caseload jumped from 1,473 in January 2023 to 7,767 by April 2025.1
+Implication: The "crisis" hasn't ended; it has simply been recapitalized. The administration is committing the state to long-term rental subsidies for non-citizens, creating a structural deficit that will persist for years. The claim that "shelter numbers are down" is technically true but fiscally dishonest.
+2.4. Militarization and Total Costs
+The administration’s inability to manage the crisis using civilian agencies necessitated the deployment of the National Guard, further driving up costs.
+National Guard Costs:
+* FY 2024: $9.7 Million expended on National Guard payroll for shelter operations.22
+* FY 2025 (Partial): $7.7 Million expended in the first half of the fiscal year alone.22
+* Total Shelter Spend: The administration is on track to spend $1.8 Billion over the FY24-FY25 period. In FY25 alone, costs are projected to top $1 billion.23
+* Per Family Cost: The weekly cost per family in the EA system has risen to approximately $3,870 (over $200,000 annualized), a figure that critics note is nearly double the median household income of Massachusetts residents.23
+2.5. Town Complaints & The "State of Emergency"
+The administration’s top-down imposition of shelters on local communities created significant friction and safety concerns.
+* State of Emergency Timeline: Declared on August 8, 2023.18 Formally ended in August 2025.25
+* Scope: Over 100 communities were mandated to host migrant families in hotels and motels.26
+* Key Incidents:
+   * Foxborough: The town was forced to accept up to 93 families at a local hotel with minimal notice, straining local school and emergency services.27
+   * Norfolk: The conversion of the former Bay State Correctional Center into a "safety-net" shelter sparked outrage among residents concerned about safety and property values.28
+   * Rockland Rape Case: In March 2024, a migrant was indicted for the rape of a 15-year-old girl at a hotel shelter in Rockland, highlighting the lack of security vetting in these emergency placements.28
+   * Revere Drugs/Weapons: A Dominican national living in a state-run shelter in Revere was arrested for possession of an assault rifle and five kilograms of fentanyl, exposing a catastrophic failure in site security.28
+________________
+3. The Transparency War: DiZoglio vs. Healey
+Governor Healey campaigned on a platform of transparency, yet her administration has engaged in an aggressive legal and political war to prevent independent oversight by State Auditor Diana DiZoglio.
+3.1. The Audit Conflict
+The conflict centers on Auditor DiZoglio’s attempt to audit the legislature and executive agencies to track opaque spending and settlement agreements.
+* The Resistance: When DiZoglio initiated the audit, the Healey administration and legislative leadership blocked access to documents, citing "Separation of Powers." Attorney General Andrea Campbell, a former subordinate of Healey, refused to support the Auditor’s lawsuit to compel compliance.29
+* Ballot Question 1 (2024): In response to the obstruction, a ballot initiative was placed before voters in November 2024 explicitly authorizing the Auditor to audit the legislature. The measure passed with overwhelming bipartisan support.
+* Post-Vote Stalling: Despite the clear mandate from voters, the administration and legislative leaders have continued to drag their feet on compliance into 2025, effectively ignoring the will of the electorate to protect their internal records.6
+3.2. The NDA Cover-Up
+One of the key targets of DiZoglio’s attempted audit is the state’s use of Non-Disclosure Agreements (NDAs) to settle claims of sexual harassment and discrimination.
+* The Data: An audit released by DiZoglio revealed that between 2010 and 2022, state agencies spent nearly $41 Million on settlements, with at least 159 cases involving confidentiality agreements.30
+* Healey’s Role: While many of these settlements predate her governorship, her administration has continued to fight the release of unredacted data regarding these settlements. The refusal to fully disclose the nature of these payouts suggests a desire to protect the reputations of politically connected insiders over the public interest.30
+3.3. Public Records Hypocrisy
+* The Pledge: Candidate Healey promised she would not claim the "governor’s exemption" from public records laws.
+* The Reality: Governor Healey has reversed course, denying requests for records related to sexual harassment complaints, call logs, and settlement agreements. Her office releases heavily redacted monthly calendars only after the month has concluded, preventing real-time scrutiny of her meetings with lobbyists and donors.6
+________________
+4. Fiscal & Administrative Irregularities
+4.1. The Steward Health Care Bailout: A $700 Million Failure
+The collapse of Steward Health Care is perhaps the most damning indictment of the administration’s regulatory negligence.
+The Failure of Oversight:
+* Warning Signs: The financial instability of Steward was known as early as 2015, when the Attorney General’s office (led by Healey) issued a report on the system’s post-acquisition compliance. Despite this, the state allowed Steward to engage in aggressive sale-leaseback transactions with Medical Properties Trust (MPT) that stripped the hospitals of their real estate assets and saddled them with unsustainable rent obligations.31
+* The 2024 Collapse: By early 2024, Steward was insolvent. The administration’s response was slow and reactive. It was not until bankruptcy was filed in May 2024 that the state mobilized a transition plan.32
+The Taxpayer Bailout:
+* Total Cost: Reports indicate the Healey administration’s plan to rescue five of the Steward hospitals will cost Massachusetts taxpayers an estimated $700 Million by 2027.4
+* Direct Commitments: The state explicitly committed $417 Million over three years in supplemental payments and advances to the new operators (Lifespan, Boston Medical Center, Lawrence General).5
+* Emergency Cash: In August and September 2024, the state advanced $30 Million and $42 Million respectively just to keep the lights on and make payroll, using Medicaid advances that unsecured creditors argued might never be recouped.5
+* Eminent Domain Seizure: In a desperate move to save St. Elizabeth’s Medical Center, the state seized the property by eminent domain. This resulted in a $66 Million settlement payment to the property owner, Apollo Global Management—essentially a taxpayer-funded buyout of a private equity bad investment.33
+Operational Failures:
+* Closures: Despite the massive expenditure, the administration failed to save Carney Hospital (Dorchester) and Nashoba Valley Medical Center, both of which closed in August 2024. This has created "medical deserts" in disproportionately low-income and rural communities.33
+4.2. Offshore Wind: The "Commonwealth Wind" Debacle
+The administration’s energy policy, centered on offshore wind, has collapsed into a series of broken contracts, penalties, and federal roadblocks.
+Contract Terminations & Penalties:
+* Commonwealth Wind (Avangrid): The developer terminated its 1,200 MW contract, paying a $48 Million penalty to the state.13
+* SouthCoast Wind: Terminated its contract, paying a $60 Million penalty.13
+* The Impact: These terminations wiped out years of progress toward climate goals. The administration is now forced to re-procure this power in 2026 at significantly higher rates, which will be passed directly to ratepayers.
+Federal Suspension (2025):
+* Trump Administration Action: In December 2025, the Trump Department of the Interior suspended the leases for Vineyard Wind and other projects, citing "national security concerns" and the need for a comprehensive review.12
+* Vineyard Wind Failure: This federal action followed a catastrophic failure in July 2024, when a turbine blade disintegrated, scattering fiberglass debris across Nantucket beaches. The manufacturer, GE Vernova, settled for $10.5 Million, but the incident destroyed local trust and provided the pretext for the federal suspension.38
+* Procurement Delays: Due to this "federal uncertainty," the state’s next offshore wind procurement has been delayed until 2026, putting the state’s 2030 climate mandates effectively out of reach.39
+4.3. The MBTA: Safety Theater vs. Reality
+While the administration declared "Mission Accomplished" on removing slow zones in late 2024, the system remains dangerous and unreliable in 2025.
+The "Victory" Lap:
+In December 2024, Governor Healey and MBTA GM Phil Eng held a press conference to celebrate the removal of all speed restrictions, framing it as a turning point for the agency.40
+The 2025 Reality:
+* Green Line Crash (Feb 2025): Just two months after the "victory" lap, two Green Line trains collided in Somerville. The investigation revealed the operator "couldn't find the brake," highlighting continued training and maintenance failures.42
+* Worcester Derailment (March 2025): A freight train carrying ethanol derailed in Worcester, exposing the fragility of the shared rail infrastructure used by the Commuter Rail.43
+* Hingham Crash (July 2025): A Tesla bypassed safety gates and struck a Commuter Rail train. While driver error was the primary cause, it raised questions about the adequacy of grade crossing safety upgrades in the "modernized" system.44
+* Fiscal Cliff: The "Track Improvement Program" was funded largely by burning through capital reserves. With the system still facing a massive operating deficit, the MBTA is approaching a fiscal cliff that will likely require tax increases or service cuts in the FY27 budget.40
+________________
+5. The Justice Crisis: State Police & The Karen Read Fallout
+The administration’s handling of the Massachusetts State Police (MSP) scandal surrounding the Karen Read murder case has revealed a deep cultural rot within the state’s premier law enforcement agency and a lack of executive accountability.
+5.1. The Proctor Texts & The Delayed Response
+* The Scandal: Lead Investigator Michael Proctor was exposed during the 2024 trial for sending texts to supervisors and friends calling the defendant a "wack job" and a "c***," and joking about searching for nudes on her phone. He also texted his sister that he hoped Read would "kill herself".8
+* Healey’s Inaction: Despite these texts being part of an internal investigation for months (if not longer), Governor Healey only commented that she was "disgusted" during the public trial revelations. She took no preemptive action to remove him from duty until the public outcry made it unavoidable.8
+* The Termination: Proctor was not fired until March 2025, nearly a year after the conduct was exposed publicly. His supervisor, Sgt. Yuriy Bukhenik, who received some of the unprofessional texts, was merely reassigned to a desk job rather than terminated, suggesting the administration is hesitant to fully purge the leadership structure.9
+5.2. Systemic Fallout
+* Retrial Chaos: The misconduct has tainted the entire prosecution, leading to a mistrial and a contentious retrial scheduled for 2025. The defense team has issued subpoenas to the MSP and the Norfolk DA’s office, threatening to expose further corruption.46
+* Sandra Birchmore Connection: The scandal has widened to include the federal investigation into the death of Sandra Birchmore. Read's legal team is seeking communications regarding this case, implicating the MSP and DA’s office in a potential cover-up of a police-perpetrated murder (federal indictment of Matt Farwell).46
+* Leadership Change: While Healey appointed Col. Geoffrey Noble to reform the MSP, his tenure has been marked by reactive "reviews" rather than the sweeping structural changes demanded by civil rights groups.48
+________________
+6. Personnel & Ethics: The Revolving Door
+The administration has systematically appointed former lobbyists and campaign donors to key positions, creating a web of conflicts of interest that belies the Governor’s ethical posturing.
+6.1. The Lobbyist-to-Official Pipeline
+* Matthew Gorzkowicz (Secretary of A&F): The man controlling the state budget previously served as Associate Vice President at the UMass President's Office, effectively the lobbying arm of the university system, and was a long-time aide to State Senator Mark Montigny. His deep ties to the legislative and lobbying machinery raise questions about his independence in managing the state’s finances.49
+* Thomas O'Brien: Appointed to key advisory roles, O’Brien is the Founding Partner and CEO of HYM Investment Group, a major real estate developer. He is also a registered lobbyist and donor. His appointment puts him in a position to influence development policies that directly benefit his firm’s massive projects, such as Suffolk Downs.51
+* The "Consultant" Loophole: The administration utilizes consultants like Johnny DeStefano (formerly with Juul) in advisory capacities, allowing them to shape policy without the strict financial disclosures required of full-time employees.53
+6.2. "Pay-to-Play" Inauguration Fundraising
+* The $1.8 Million Slush Fund: The Healey-Driscoll Inaugural Committee raised nearly $1.8 Million from a "who's who" of entities with business before the state. Because inaugural committees are not subject to the same contribution limits as campaigns, this allowed the administration to accept massive checks from prohibited sources.54
+* Key Donors & Conflicts:
+   * Suffolk Construction: A major state contractor.
+   * PhRMA: The pharmaceutical lobbying group.
+   * Dempsey Associates: A lobbying firm led by former House Ways & Means Chairman Brian Dempsey, which maxed out with a $25,000 donation.54
+   * GrubHub: Donated $10,000. This is particularly egregious as Healey, as Attorney General, had previously sued GrubHub for charging restaurants illegal fees during the pandemic. The donation appears to be a clear attempt to buy goodwill.54
+   * Hiring Freeze: While raising millions for parties, the administration implemented a hiring freeze across the executive branch in May 2025 due to "tightening budget outlooks," highlighting the disconnect between the administration's personal largesse and the state's fiscal reality.55
+________________
+7. Adversarial Quote Bank
+On Migrant Costs & Deception:
+"Taxpayers are footing a nearly $100 million bill with little transparency, no measurable outcomes and no end in sight. The promise of savings from closing hotel shelters is being quietly replaced with backdoor spending that still lacks accountability." — MassGOP Statement 1
+"Instead of ending this program, they're simply moving illegal migrants... from one taxpayer-funded program to another and calling it reform. The burden on taxpayers hasn't gone away, it's just been rebranded." — Paul Diego Craney, MassFiscal 23
+On Steward Health Care Bailout:
+"There was a failure of leadership and commitment to this region... Carney Hospital and Nashoba Valley were left to close, leaving many to question why the state couldn't [intervene earlier]." — CommonWealth Beacon Investigation 33
+"Healey’s plan to rescue five bankrupt Steward Health Care hospitals could cost Massachusetts taxpayers $700 million by 2027." — Boston Globe Report 4
+On No-Bid Contracts:
+"The audit notes there was missing evidence and insufficient documentation to support EOHLC's decision to enter into a no-bid contract with Spinelli... resulting in overpayments on 9.6% of deliveries." — Office of the State Auditor 19
+On State Police Scandal:
+"It does harm, frankly, to the dignity and the integrity of the work of men and women across the State Police... I am disgusted by that." — Gov. Maura Healey (Reaction to Proctor texts) 56
+On Offshore Wind:
+"It's as if you purchased a car from a dealership and a year later, they came to your house looking to take it back and resell it to you at a higher price... The Healey administration is letting them take it and heading back to the dealer with their checkbook." — Paul Craney, MassFiscal 57
+________________
+8. Data Appendix: Fiscal Irregularities Summary
+Table 1: Questionable Shelter Contracts & Connections
+
+
+Vendor
+	Contract Amount
+	Irregularity
+	Political/Personal Connection
+	Spinelli Ravioli Mfg.
+	$10,000,000
+	No-bid; Overcharged 9.6%; Flat rate offer ignored.
+	Owner donated $10k+ to Healey/Driscoll.21
+	Mercedes Cab / Pilgrim
+	$6,800,000+
+	Initial $2.8M + serial amendments. No competitive bid.
+	Long-term monopoly on transport awarded under "emergency" pretext.17
+	Valley Opportunity Council
+	Multi-Million
+	Subcontracted $945k to Key Food Marketplace.
+	Key Food owner sits on Valley Opp. Council Board.21
+	Table 2: The "Hidden" Shelter Budget (HomeBASE)
+
+
+Fiscal Year
+	HomeBASE Spending
+	Caseload
+	Context
+	FY 2022
+	$9.5 Million
+	~1,400
+	Pre-Crisis Baseline
+	FY 2025
+	$97.0 Million
+	7,767
+	+921% Spending Increase used to hide shelter numbers.1
+	________________
+END OF REPORT
+Works cited
+1. $30K in migrant housing aid has Dem gov on hot seat for 'revolving door' policy - Fox News, accessed January 13, 2026, https://www.foxnews.com/politics/30k-migrant-housing-aid-has-dem-gov-hot-seat-revolving-door-policy
+2. MassGOP Slams Maura Healey Over New Report Showing Shelter Costs Shifting to HomeBASE - Massachusetts GOP, accessed January 13, 2026, https://massgop.com/massgop-slams-maura-healey-over-new-report-showing-shelter-costs-shifting-to-homebase/
+3. Examining Recent Trends in Rental Assistance & Emergency Assistance Shelter Spending - Massachusetts Taxpayers Foundation, accessed January 13, 2026, https://www.masstaxpayers.org/sites/default/files/publications/2025-04/Examining%20Recent%20Trends%20in%20Rental%20Assistance%20and%20Emergency%20Assistance%20Shelter%20Spending.pdf
+4. The Boston Globe: State's plan to save six Steward hospitals could cost taxpayers $700M, accessed January 13, 2026, https://wbjournal.com/article/the-boston-globe-states-plan-to-save-six-steward-hospitals-could-cost-taxpayers-700m/
+5. $417 Mil to Save Steward Hospitals, So Far | Franklin Observer, accessed January 13, 2026, https://franklinobserver.town.news/g/franklin-town-ma/n/272361/417-mil-save-steward-hospitals-so-far
+6. DiZoglio's effort to audit the Legislature remains stalled. So she wants voters to change the law, again. - CommonWealth Beacon, accessed January 13, 2026, https://commonwealthbeacon.org/politics/public-records/dizoglios-effort-to-audit-the-legislature-remains-stalled-so-she-wants-voters-to-change-the-law-again/
+7. Question 1, on auditing the Legislature, raises issues if it passes - The New Bedford Light, accessed January 13, 2026, https://newbedfordlight.org/question-1-on-auditing-the-legislature-raises-issues-if-it-passes/
+8. Karen Read case: Gov. Healey 'disgusted' by Trooper's text messages - YouTube, accessed January 13, 2026, https://www.youtube.com/watch?v=7Tbo5iWc7yg
+9. State trooper Michael Proctor fired, under scrutiny in Karen Read case | GBH - WGBH, accessed January 13, 2026, https://www.wgbh.org/news/local/2025-03-19/state-trooper-michael-proctor-fired-under-scrutiny-in-karen-read-case
+10. Mass. State Police sergeant who oversaw Karen Read investigation reassigned from DA's office - Police1, accessed January 13, 2026, https://www.police1.com/legal/mass-state-police-sergeant-who-oversaw-karen-read-investigation-reassigned-from-das-office
+11. Latest delay puts wind power contracts two years behind schedule - The New Bedford Light, accessed January 13, 2026, https://newbedfordlight.org/latest-delay-puts-wind-power-contracts-two-years-behind-schedule/
+12. Our offshore wind tracker: What's new with wind projects off Massachusetts and beyond? - The New Bedford Light, accessed January 13, 2026, https://newbedfordlight.org/offshore-wind-tracker-whats-happening-to-massachusetts-projects/
+13. Massachusetts offshore wind developers could forfeit more than $100M - The New Bedford Light, accessed January 13, 2026, https://newbedfordlight.org/massachusetts-offshore-wind-developers-could-forfeit-more-than-100m/
+14. New UMass Amherst/WCVB Poll Finds Gov. Maura Healey Maintains Support Among Bay State Voters, though Cracks Emerge, accessed January 13, 2026, https://www.umass.edu/news/article/new-umass-amherstwcvb-poll-finds-gov-maura-healey-maintains-support-among-bay-state
+15. Healey holds her head above water in new poll - CommonWealth Beacon, accessed January 13, 2026, https://commonwealthbeacon.org/by-the-numbers/healey-holds-her-head-above-water-in-new-poll/
+16. Lexington resident Mike Kennealy launches Republican bid for governor, accessed January 13, 2026, https://lexobserver.org/2025/05/02/republican-mike-kennealy-runs-for-massachusetts-governor/
+17. Executive Office of Housing and Livable Communities—Emergency ..., accessed January 13, 2026, https://www.mass.gov/info-details/executive-office-of-housing-and-livable-communities-emergency-shelter-finding-1
+18. Governor Healey Declares State of Emergency, Calls for Support for Newly Arriving Migrant Families | Mass.gov, accessed January 13, 2026, https://www.mass.gov/news/governor-healey-declares-state-of-emergency-calls-for-support-for-newly-arriving-migrant-families
+19. Shelter Audit Finds Contract Mismanagement, Improper and ..., accessed January 13, 2026, https://www.mass.gov/news/shelter-audit-finds-contract-mismanagement-improper-and-unlawful-use-of-emergency-procurements
+20. Executive Office of Housing and Livable Communities—Emergency Shelter - Finding 2, accessed January 13, 2026, https://www.mass.gov/info-details/executive-office-of-housing-and-livable-communities-emergency-shelter-finding-2
+21. MassGOP: Healey Failed to Disclose Knowledge of More No-Bid Migrant Contracts, accessed January 13, 2026, https://massgop.com/massgop-healey-failed-to-disclose-knowledge-of-more-no-bid-migrant-contracts/
+22. March 10, 2025 The Honorable Michael J. Rodrigues Chair, Senate Committee on Ways and Means State House, Room 212 Boston, MA 02 - Massachusetts General Court, accessed January 13, 2026, https://malegislature.gov/Bills/194/SD2742.pdf
+23. MassFiscal Blasts Beacon Hill Leadership for Misplaced Spending Priorities as Shelter Costs Near $1 Billion - Massachusetts Fiscal Alliance, accessed January 13, 2026, https://www.massfiscal.org/massfiscal-blasts-beacon-hill-leadership-misplaced-priorities-shelter-costs-1-billion
+24. Migrant influx pushing Mass. shelter costs past $1B in FY25: report - Fox News, accessed January 13, 2026, https://www.foxnews.com/politics/migrant-influx-pushing-mass-shelter-costs-past-1b-fy25-report
+25. Governor Healey Announces Successful Closure of All Hotel Shelters, Ends State of Emergency | Mass.gov, accessed January 13, 2026, https://www.mass.gov/news/governor-healey-announces-successful-closure-of-all-hotel-shelters-ends-state-of-emergency
+26. State publishes report that lists 100 Massachusetts communities eligible to shelter migrants, accessed January 13, 2026, https://www.boston25news.com/news/local/state-publishes-report-that-lists-100-massachusetts-communities-sheltering-migrants/WOKDHIOFQVE5JP6UWVHVELEUB4/
+27. Migrant/Homeless Familes in Foxborough, accessed January 13, 2026, https://www.foxboroughma.gov/departments/office_of_the_town_manager/migrant_homeless_familes_in_foxborough
+28. A look back: After years of grappling with a migrant crisis, Mass. shutters remaining hotel shelters - Boston 25 News, accessed January 13, 2026, https://www.boston25news.com/news/local/mass-closes-all-hotel-shelters-healey-ends-state-emergency-declared-2023/NIH4QULJIJGH5IMSCI5MYAPZLA/
+29. DiZoglio blasts House, Senate over Legislature audit - YouTube, accessed January 13, 2026, https://www.youtube.com/watch?v=IoP79_fo1GQ
+30. Healey acts on NDAs before DiZoglio's audit report - YouTube, accessed January 13, 2026, https://www.youtube.com/watch?v=LLhlofdOUDM
+31. The Long, Twisting Tale of Steward Health Care: A Timeline By Vani Agarwal and Amy Goldstein - Brookings Institution, accessed January 13, 2026, https://www.brookings.edu/wp-content/uploads/2026/09/Steward-Timeline-FINAL-10-02-05.pdf
+32. The Pillaging of Steward Health Care - Private Equity Stakeholder Project PESP, accessed January 13, 2026, https://pestakeholder.org/reports/the-pillaging-of-steward-health-care/
+33. When communities lose trust: One year after Steward Health's bankruptcy and the death of two hospitals - CommonWealth Beacon, accessed January 13, 2026, https://commonwealthbeacon.org/health-care/when-communities-lose-trust-one-year-after-steward-healths-bankruptcy-and-the-death-of-two-hospitals/
+34. Massachusetts to Give Steward $30 Million to Keep Hospitals Open - Bloomberg Law News, accessed January 13, 2026, https://news.bloomberglaw.com/bankruptcy-law/massachusetts-to-give-steward-30-million-to-keep-hospitals-open
+35. Creditors challenge $30M in state aid for Steward hospitals - Worcester Business Journal, accessed January 13, 2026, https://wbjournal.com/article/creditors-challenge-30m-in-state-aid-for-steward-hospitals/
+36. Avangrid's Commonwealth Wind to pay $48 million penalty to terminate offshore wind contracts | CAI - WCAI, accessed January 13, 2026, https://www.capeandislands.org/local-news/2023-07-20/avangrids-commonwealth-wind-to-pay-48-million-penalty-to-terminate-offshore-wind-contracts
+37. Delay leaves offshore wind contracts a year behind schedule - The New Bedford Light, accessed January 13, 2026, https://newbedfordlight.org/delay-leaves-offshore-wind-contracts-a-year-behind-schedule/
+38. States and developer sue the Trump administration for halting work on New England offshore wind farm - CapeCod.com, accessed January 13, 2026, https://www.capecod.com/newscenter/local-news/states-and-developer-sue-the-trump-administration-for-halting-work-on-new-england-offshore-wind-farm/
+39. Offshore wind power contracts delayed, again, to 2026 - The New Bedford Light, accessed January 13, 2026, https://newbedfordlight.org/offshore-wind-power-contracts-delayed-again-to-2026/
+40. Track Improvement Program | Projects - MBTA, accessed January 13, 2026, https://www.mbta.com/projects/track-improvement-program
+41. How Boston transit leaders fixed a failing transit system | Smart Cities Dive, accessed January 13, 2026, https://www.smartcitiesdive.com/news/mbta-boston-transit-fixed-system-apta/761603/
+42. Feb 9th 2025. 2 mbta green line trains crash in somerville ma. : r/CatastrophicFailure, accessed January 13, 2026, https://www.reddit.com/r/CatastrophicFailure/comments/1iljwm1/feb_9th_2025_2_mbta_green_line_trains_crash_in/
+43. Train Crash news - Today's latest updates - CBS Boston, accessed January 13, 2026, https://www.cbsnews.com/boston/tag/train-crash/
+44. MBTA commuter rail service disrupted after teen crashes Tesla into train - Boston 25 News, accessed January 13, 2026, https://www.boston25news.com/news/local/mbta-commuter-rail-service-disrupted-after-teen-crashes-tesla-into-train/GXSMGRPR7JAPJMPTI74TWTHC2Y/
+45. MTF Session Preview: The MBTA The MBTA is in crisis. As the new administration and legislature grapple with fixes, they will do - Massachusetts Taxpayers Foundation, accessed January 13, 2026, https://www.masstaxpayers.org/sites/default/files/publications/2023-02/MTF%20Session%20Preview%20-%20The%20MBTA.pdf
+46. 25 Investigates: Karen Read's legal team subpoenas state police, DA's office for records, accessed January 13, 2026, https://www.boston25news.com/news/local/25-investigates-karen-reads-legal-team-subpoenas-state-police-das-office-records/5J7HTSJ5KJHJ5PKO7IQSNJHNQI/
+47. Re-trial of Karen Read case to commence next week | Canton Citizen, accessed January 13, 2026, https://www.thecantoncitizen.com/2025/03/27/re-trial-of-karen-read-case-to-commence-next-week/
+48. Mass. State Police pledge review of training, oversight following Karen Read trial - Police1, accessed January 13, 2026, https://www.police1.com/police-performance/mass-state-police-pledge-review-of-training-oversight-following-karen-read-trial
+49. Workshops - Massachusetts Municipal Association (MMA), accessed January 13, 2026, https://www.mma.org/connect-351/workshops/
+50. Inspector general blames everyone, but UMass killed the Star Store - The New Bedford Light, accessed January 13, 2026, https://newbedfordlight.org/umass-killed-the-star-store-cvpa-spillane-shapiro-meehan-montigny/
+51. Lobbyist Public Search, accessed January 13, 2026, https://www.sec.state.ma.us/lobbyistpublicsearch/CompleteDisclosure.aspx?sysvalue=hTpfuAXMhicRvD5o4yuXgdn83LccNg2hl9Jc8RVWsZyhNC7wSKA1RfOC+M9SnoI8
+52. Boston Magazine: 150 Most Influential Bostonians - In the News - Congresswoman Katherine Clark, accessed January 13, 2026, https://katherineclark.house.gov/2024/5/boston-magazine-150-most-influential-bostonians
+53. JUUL Labs - Tobacco Tactics, accessed January 13, 2026, https://www.tobaccotactics.org/article/juul-labs/
+54. Healey raises $1.8 mil to pay for inaugural party - MASSterList, accessed January 13, 2026, https://massterlist.com/2023/01/06/healey-raises-1-8-mil-to-pay-for-inaugural-party/
+55. Healey announces hiring freeze, federal cuts dashboard as fiscal outlook remains murky, accessed January 13, 2026, https://massterlist.com/2025/05/15/healey-announces-hiring-freeze-federal-cuts-dashboard-as-fiscal-outlook-remains-murky/
+56. Governor "disgusted" by Massachusetts State Police Trooper Proctor's texts in Karen Read case - CBS News, accessed January 13, 2026, https://www.cbsnews.com/boston/news/trooper-proctor-texts-maura-healey-state-police/
+57. Massachusetts utilities regulators approve offshore wind contract termination - Fall River Reporter, accessed January 13, 2026, https://fallriverreporter.com/massachusetts-utilities-regulators-approve-offshore-wind-contract-termination/
