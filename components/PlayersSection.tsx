@@ -14,8 +14,8 @@ const iconMap = {
 
 export default function PlayersSection() {
   return (
-    <section className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 sm:py-28 lg:py-32 relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function PlayersSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {players.map((player, index) => {
             const Icon = iconMap[player.id as keyof typeof iconMap] || AlertCircle
 
@@ -39,7 +39,7 @@ export default function PlayersSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative p-6 rounded-2xl bg-card border border-border hover:border-border/80 transition-all group"
+                className="relative p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-border/80 transition-all group"
               >
                 {/* Header */}
                 <div className="flex items-start gap-4 mb-6">
@@ -61,7 +61,7 @@ export default function PlayersSection() {
                 </div>
 
                 {/* Points */}
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {player.points.map((point, pointIndex) => (
                     <li key={pointIndex} className="flex items-start gap-3 text-sm">
                       <span className={`w-1.5 h-1.5 rounded-full ${colorClasses[player.color as ColorKey].bg} mt-2 flex-shrink-0`} />

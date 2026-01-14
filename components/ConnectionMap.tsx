@@ -6,11 +6,11 @@ import { Network, ArrowRight, DollarSign, Building2, Users, AlertTriangle } from
 
 export default function ConnectionMap() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-24 sm:py-28 lg:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-card/50 via-transparent to-card/50" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,13 +72,13 @@ export default function ConnectionMap() {
           </motion.div>
 
           {/* Branches */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10">
             {/* No-Bid Contracts */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="p-6 rounded-2xl bg-card border border-money/30"
+              className="p-6 sm:p-8 rounded-2xl bg-card border border-money/30"
             >
               <DollarSign className="w-10 h-10 text-money mb-4" />
               <h3 className="text-lg font-bold text-white mb-4">No-Bid Contracts</h3>
@@ -102,7 +102,7 @@ export default function ConnectionMap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="p-6 rounded-2xl bg-card border border-danger/30"
+              className="p-6 sm:p-8 rounded-2xl bg-card border border-danger/30"
             >
               <Users className="w-10 h-10 text-danger mb-4" />
               <h3 className="text-lg font-bold text-white mb-4">Conflict of Interest</h3>
@@ -129,7 +129,7 @@ export default function ConnectionMap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="p-6 rounded-2xl bg-card border border-money/30"
+              className="p-6 sm:p-8 rounded-2xl bg-card border border-money/30"
             >
               <Building2 className="w-10 h-10 text-money mb-4" />
               <h3 className="text-lg font-bold text-white mb-4">Lobbyist Pipeline</h3>
@@ -154,7 +154,7 @@ export default function ConnectionMap() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="p-6 rounded-2xl bg-gradient-to-r from-danger/10 via-card to-money/10 border border-border text-center"
+            className="p-6 sm:p-8 lg:p-10 rounded-2xl bg-gradient-to-r from-danger/10 via-card to-money/10 border border-border text-center"
           >
             <p className="text-lg text-muted-foreground italic">
               "Any advocacy by Gov. Healey for infrastructure and housing initiatives directly benefits connected donors, lobbyists, and political allies through the network of no-bid contracts and advisory appointments."

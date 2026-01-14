@@ -6,11 +6,11 @@ import { FileText, ExternalLink, BookOpen } from 'lucide-react'
 
 export default function Sources() {
   return (
-    <section id="sources" className="py-20 relative">
+    <section id="sources" className="py-24 sm:py-28 lg:py-32 relative">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export default function Sources() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-4"
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5"
         >
           {sources.map((source, index) => (
             <motion.a
@@ -45,7 +45,7 @@ export default function Sources() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border hover:border-muted/50 hover:bg-card-hover transition-all group"
+              className="flex items-start gap-4 p-5 sm:p-6 rounded-xl bg-card border border-border hover:border-muted/50 hover:bg-card-hover transition-all group"
             >
               <div className="w-10 h-10 rounded-lg bg-muted/10 flex items-center justify-center flex-shrink-0">
                 <FileText className="w-5 h-5 text-muted-foreground" />
@@ -68,7 +68,7 @@ export default function Sources() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 p-6 rounded-2xl bg-danger/5 border border-danger/20"
+          className="mt-16 p-6 sm:p-8 rounded-2xl bg-danger/5 border border-danger/20"
         >
           <h3 className="text-lg font-bold text-danger mb-2">Important Legal Notice</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">

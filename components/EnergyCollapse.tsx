@@ -6,11 +6,11 @@ import { Wind, XCircle, DollarSign, AlertTriangle } from 'lucide-react'
 
 export default function EnergyCollapse() {
   return (
-    <section id="energy" className="py-20 relative">
+    <section id="energy" className="py-24 sm:py-28 lg:py-32 relative">
       {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-t from-money/5 via-transparent to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ export default function EnergyCollapse() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 rounded-2xl bg-card border border-border"
+          className="mb-16 p-6 sm:p-8 rounded-2xl bg-card border border-border"
         >
           <p className="text-muted-foreground leading-relaxed">{energyCollapse.overview}</p>
         </motion.div>
@@ -48,7 +48,7 @@ export default function EnergyCollapse() {
             Contract Failures & Penalties
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {energyCollapse.failures.map((failure, index) => (
               <motion.div
                 key={index}
@@ -56,7 +56,7 @@ export default function EnergyCollapse() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-card border border-border hover:border-danger/30 transition-colors"
+                className="p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-danger/30 transition-colors"
               >
                 <div className="flex items-center justify-between mb-4">
                   <Wind className="w-8 h-8 text-muted" />
@@ -92,7 +92,7 @@ export default function EnergyCollapse() {
             Critical Issues
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
             {energyCollapse.issues.map((issue, index) => (
               <motion.div
                 key={index}
@@ -100,7 +100,7 @@ export default function EnergyCollapse() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border"
+                className="flex items-start gap-3 p-5 sm:p-6 rounded-xl bg-card border border-border"
               >
                 <span className="w-2 h-2 rounded-full bg-money mt-2 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">{issue}</span>
