@@ -25,28 +25,24 @@ export default function StewardBailout() {
       {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-danger/5 to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        {/* Header */}
+      <div className="max-w-7xl mx-auto page-gutter relative z-10">
+        {/* Header - Simpler, no badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-danger/10 border border-danger/20 mb-4">
-            <Building2 className="w-4 h-4 text-danger" />
-            <span className="text-sm font-medium text-danger">HEALTHCARE COLLAPSE</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">{stewardBailout.title}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl">{stewardBailout.subtitle}</p>
         </motion.div>
 
-        {/* Overview */}
+        {/* Overview - Left border accent */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 sm:p-8 rounded-2xl bg-card border border-border"
+          className="mb-16 p-6 sm:p-8 rounded-xl bg-card/50 border-l-4 border-l-danger border-t border-r border-b border-t-border border-r-border border-b-border"
         >
           <p className="text-muted-foreground leading-relaxed">{stewardBailout.overview}</p>
         </motion.div>
@@ -150,3 +146,4 @@ export default function StewardBailout() {
     </section>
   )
 }
+

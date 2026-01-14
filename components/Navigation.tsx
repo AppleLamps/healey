@@ -36,8 +36,8 @@ export default function Navigation() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
+      <div className="max-w-7xl mx-auto page-gutter">
+        <div className="flex items-center justify-between h-16 sm:h-[4.5rem] lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-danger flex items-center justify-center group-hover:glow-danger transition-all">
@@ -81,7 +81,7 @@ export default function Navigation() {
           exit={{ opacity: 0, y: -20 }}
           className="md:hidden bg-background/95 backdrop-blur-md border-b border-border"
         >
-          <div className="px-6 py-4 space-y-2">
+          <div className="page-gutter py-4 space-y-2">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -98,3 +98,4 @@ export default function Navigation() {
     </motion.nav>
   )
 }
+

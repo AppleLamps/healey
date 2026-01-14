@@ -12,28 +12,24 @@ export default function TransparencyWar() {
       {/* Background accent */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-money/5 to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        {/* Header */}
+      <div className="max-w-7xl mx-auto page-gutter relative z-10">
+        {/* Header - Simpler, no badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-money/10 border border-money/20 mb-4">
-            <EyeOff className="w-4 h-4 text-money" />
-            <span className="text-sm font-medium text-money">TRANSPARENCY FAILURE</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">{transparencyWar.title}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl">{transparencyWar.subtitle}</p>
         </motion.div>
 
-        {/* Overview */}
+        {/* Overview - Left border accent */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 sm:p-8 rounded-2xl bg-card border border-border"
+          className="mb-16 p-6 sm:p-8 rounded-xl bg-card/50 border-l-4 border-l-money border-t border-r border-b border-t-border border-r-border border-b-border"
         >
           <p className="text-muted-foreground leading-relaxed">{transparencyWar.overview}</p>
         </motion.div>
@@ -98,3 +94,4 @@ export default function TransparencyWar() {
     </section>
   )
 }
+

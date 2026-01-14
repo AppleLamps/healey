@@ -15,7 +15,7 @@ const iconMap = {
 export default function PlayersSection() {
   return (
     <section className="py-24 sm:py-28 lg:py-32 relative">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto page-gutter">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -80,3 +80,4 @@ export default function PlayersSection() {
     </section>
   )
 }
+

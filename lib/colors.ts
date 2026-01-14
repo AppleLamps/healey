@@ -7,6 +7,7 @@ export const colorClasses: Record<ColorKey, {
   bgHover: string
   border: string
   borderHover: string
+  borderHoverClass: string
 }> = {
   danger: {
     text: 'text-danger',
@@ -15,6 +16,7 @@ export const colorClasses: Record<ColorKey, {
     bgHover: 'bg-danger/5',
     border: 'border-danger/30',
     borderHover: 'border-danger/50',
+    borderHoverClass: 'hover:border-danger/50',
   },
   money: {
     text: 'text-money',
@@ -23,6 +25,7 @@ export const colorClasses: Record<ColorKey, {
     bgHover: 'bg-money/5',
     border: 'border-money/30',
     borderHover: 'border-money/50',
+    borderHoverClass: 'hover:border-money/50',
   },
   muted: {
     text: 'text-muted',
@@ -31,5 +34,6 @@ export const colorClasses: Record<ColorKey, {
     bgHover: 'bg-muted/5',
     border: 'border-muted/30',
     borderHover: 'border-muted/50',
+    borderHoverClass: 'hover:border-muted/50',
   },
 }

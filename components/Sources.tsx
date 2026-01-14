@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { sources } from '@/lib/data'
-import { FileText, ExternalLink, BookOpen } from 'lucide-react'
+import { FileText, ExternalLink } from 'lucide-react'
 
 export default function Sources() {
   return (
@@ -10,20 +10,16 @@ export default function Sources() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        {/* Header */}
+      <div className="max-w-7xl mx-auto page-gutter relative z-10">
+        {/* Header - Simpler, no badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-muted/10 border border-muted/20 mb-4">
-            <BookOpen className="w-4 h-4 text-muted-foreground" />
-            <span className="text-sm font-medium text-muted-foreground">DOCUMENTATION</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Sources & Citations</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3">Sources & Citations</h2>
+          <p className="text-muted-foreground max-w-2xl">
             All claims are based on publicly available sources including congressional disclosures, court records, news reports, and official audits.
           </p>
         </motion.div>
@@ -89,3 +85,4 @@ export default function Sources() {
     </section>
   )
 }
+

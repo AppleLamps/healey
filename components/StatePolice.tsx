@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { statePoliceScandale } from '@/lib/data'
-import { Shield, AlertTriangle, Clock, FileX, FileCheck, AlertOctagon } from 'lucide-react'
+import { colorClasses, type ColorKey } from '@/lib/colors'
+import { Clock, FileX, FileCheck, AlertOctagon, AlertTriangle } from 'lucide-react'
 
 const timelineIcons = {
   warning: AlertTriangle,
@@ -11,7 +12,7 @@ const timelineIcons = {
   contract: AlertOctagon,
 }
 
-const timelineColors = {
+const timelineColors: Record<string, ColorKey> = {
   warning: 'money',
   failure: 'danger',
   action: 'muted',
@@ -21,28 +22,24 @@ const timelineColors = {
 export default function StatePolice() {
   return (
     <section id="police" className="py-24 sm:py-28 lg:py-32 relative">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Header */}
+      <div className="max-w-7xl mx-auto page-gutter">
+        {/* Header - Simpler, no badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-danger/10 border border-danger/20 mb-4">
-            <Shield className="w-4 h-4 text-danger" />
-            <span className="text-sm font-medium text-danger">JUSTICE CRISIS</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">{statePoliceScandale.title}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl">{statePoliceScandale.subtitle}</p>
         </motion.div>
 
-        {/* Overview */}
+        {/* Overview - Left border accent */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 sm:p-8 rounded-2xl bg-card border border-border"
+          className="mb-16 p-6 sm:p-8 rounded-xl bg-card/50 border-l-4 border-l-danger border-t border-r border-b border-t-border border-r-border border-b-border"
         >
           <p className="text-muted-foreground leading-relaxed">{statePoliceScandale.overview}</p>
         </motion.div>
@@ -60,7 +57,7 @@ export default function StatePolice() {
             </h3>
 
             <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-border" />
+              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-danger via-money to-muted" />
 
               <div className="space-y-6">
                 {statePoliceScandale.timeline.map((item, index) => {
@@ -76,11 +73,11 @@ export default function StatePolice() {
                       transition={{ delay: index * 0.1 }}
                       className="flex gap-4"
                     >
-                      <div className={`w-8 h-8 rounded-full bg-${color}/10 border border-${color}/30 flex items-center justify-center flex-shrink-0 relative z-10`}>
-                        <Icon className={`w-4 h-4 text-${color}`} />
+                      <div className={`w-8 h-8 rounded-full ${colorClasses[color].bgLight} ${colorClasses[color].border} flex items-center justify-center flex-shrink-0 relative z-10`}>
+                        <Icon className={`w-4 h-4 ${colorClasses[color].text}`} />
                       </div>
                       <div className="flex-1 pb-6">
-                        <div className={`text-sm font-medium text-${color} mb-1`}>{item.date}</div>
+                        <div className={`text-sm font-medium ${colorClasses[color].text} mb-1`}>{item.date}</div>
                         <div className="text-white text-sm">{item.event}</div>
                       </div>
                     </motion.div>
@@ -109,9 +106,8 @@ export default function StatePolice() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex items-start gap-3 p-5 sm:p-6 rounded-xl bg-card border border-border hover:border-danger/30 transition-colors"
+                  className="flex items-start gap-3 p-5 sm:p-6 rounded-xl bg-card border-l-4 border-l-danger/50 border-t border-r border-b border-t-border border-r-border border-b-border hover:border-l-danger transition-colors"
                 >
-                  <span className="w-2 h-2 rounded-full bg-danger mt-2 flex-shrink-0" />
                   <span className="text-muted-foreground">{issue}</span>
                 </motion.div>
               ))}

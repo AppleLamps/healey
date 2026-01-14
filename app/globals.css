@@ -30,6 +30,10 @@
   --font-family-display: 'Playfair Display', Georgia, serif;
 }
 
+:root {
+  --page-gutter: clamp(1.5rem, 4vw, 5rem);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -42,24 +46,11 @@ html {
   color-scheme: dark;
 }
 
-/* Global container with safe-area-inset for modern devices */
+/* Global gutter with safe-area-inset for modern devices */
+.page-gutter,
 .container-safe {
-  padding-left: max(1.5rem, env(safe-area-inset-left));
-  padding-right: max(1.5rem, env(safe-area-inset-right));
-}
-
-@media (min-width: 640px) {
-  .container-safe {
-    padding-left: max(2rem, env(safe-area-inset-left));
-    padding-right: max(2rem, env(safe-area-inset-right));
-  }
-}
-
-@media (min-width: 1024px) {
-  .container-safe {
-    padding-left: max(3rem, env(safe-area-inset-left));
-    padding-right: max(3rem, env(safe-area-inset-right));
-  }
+  padding-left: max(var(--page-gutter), env(safe-area-inset-left));
+  padding-right: max(var(--page-gutter), env(safe-area-inset-right));
 }
 
 body {
@@ -113,32 +104,51 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: text;
 }
 
-/* Glow effects */
+/* Glow effects - intensified for visibility */
 .glow-danger {
-  box-shadow: 0 0 40px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 0 60px rgba(220, 38, 38, 0.5), 0 0 100px rgba(220, 38, 38, 0.3);
 }
 
 .glow-money {
-  box-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 60px rgba(245, 158, 11, 0.5), 0 0 100px rgba(245, 158, 11, 0.3);
+}
+
+/* Intense glow for hero elements */
+.glow-danger-intense {
+  box-shadow: 0 0 80px rgba(220, 38, 38, 0.6), 0 0 120px rgba(220, 38, 38, 0.4), 0 0 200px rgba(220, 38, 38, 0.2);
+}
+
+.glow-money-intense {
+  box-shadow: 0 0 80px rgba(245, 158, 11, 0.6), 0 0 120px rgba(245, 158, 11, 0.4), 0 0 200px rgba(245, 158, 11, 0.2);
+}
+
+/* Hero stat card - breaks out of container */
+.hero-stat-card {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(24, 24, 27, 1) 50%, rgba(245, 158, 11, 0.1) 100%);
+  border: 1px solid rgba(220, 38, 38, 0.4);
+}
+
+/* Left border accent variant for cards */
+.card-accent-left {
+  border-left-width: 4px;
+}
+
+/* Animated pulse for emphasis */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
 }
 
 /* Section divider */
 .section-divider {
   height: 1px;
-  margin: 0 1.5rem;
+  margin-left: max(var(--page-gutter), env(safe-area-inset-left));
+  margin-right: max(var(--page-gutter), env(safe-area-inset-right));
   background: linear-gradient(90deg, transparent, #27272a, transparent);
-}
-
-@media (min-width: 640px) {
-  .section-divider {
-    margin: 0 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section-divider {
-    margin: 0 3rem;
-  }
 }
 
 /* Improved section padding */
