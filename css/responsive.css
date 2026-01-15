@@ -1,0 +1,302 @@
+/* === RESPONSIVE STYLES === */
+/* Mobile-first approach - base styles handle mobile, this file adds tablet/desktop overrides */
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        display: flex;
+        position: static;
+        background: transparent;
+        flex-direction: row;
+        padding: 0;
+        gap: 1.5rem;
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+        padding: 0.25rem 0;
+    }
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--gradient-red);
+        transition: var(--transition);
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .classification-badge {
+        padding: 0.5rem 1.25rem;
+        font-size: 0.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .title-small {
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-meta {
+        gap: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .meta-label {
+        font-size: 0.65rem;
+    }
+
+    .meta-value {
+        font-size: 0.9rem;
+    }
+
+    .hero-stats {
+        gap: 3rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .hero-stat-value {
+        font-size: 2rem;
+    }
+
+    .hero-stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* NDA Stats */
+    .nda-stats {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .nda-stat .stat-value {
+        font-size: 2.5rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    /* Bailout Grid */
+    .bailout-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ===== DESKTOP (992px+) ===== */
+@media (min-width: 992px) {
+    /* Vulnerability Cards */
+    .vuln-number {
+        font-size: 3rem;
+    }
+
+    .vuln-title {
+        font-size: 1.2rem;
+    }
+
+    .vuln-desc {
+        font-size: 0.9rem;
+    }
+
+    .stat-value {
+        font-size: 1.75rem;
+    }
+
+    /* Timeline */
+    .timeline {
+        padding-left: 3rem;
+    }
+
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item::before {
+        content: attr(data-year);
+        position: absolute;
+        left: -9rem;
+        width: 7rem;
+        text-align: right;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--text-muted);
+        display: block;
+    }
+
+    .timeline-marker {
+        left: -3rem;
+    }
+}
+
+/* ===== LARGE DESKTOP (1200px+) ===== */
+@media (min-width: 1200px) {
+    /* Quick Nav */
+    .quick-nav {
+        position: fixed;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        z-index: 100;
+    }
+
+    .quick-nav-item {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--text-muted);
+        font-size: 0.7rem;
+        font-weight: 700;
+        transition: var(--transition);
+    }
+
+    .quick-nav-item:hover,
+    .quick-nav-item.active {
+        background: var(--gradient-red);
+        border-color: transparent;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .nav,
+    .quick-nav,
+    .hero-cta,
+    .scroll-indicator,
+    .footer-actions,
+    .progress-bar {
+        display: none !important;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 2rem;
+    }
+
+    .section {
+        padding: 2rem 0;
+        break-inside: avoid;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    .tab-content {
+        display: block !important;
+        margin-bottom: 2rem;
+    }
+
+    .tab-content:not(.active) {
+        border-top: 1px solid #ccc;
+        padding-top: 1rem;
+    }
+
+    .fiscal-tabs {
+        display: none;
+    }
+}
+
+/* ===== FOCUS INDICATORS FOR INTERACTIVE ELEMENTS ===== */
+.nav-links a:focus-visible,
+.quick-nav-item:focus-visible,
+.hero-cta:focus-visible,
+.tab-btn:focus-visible,
+.print-btn:focus-visible,
+.back-to-top:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+.vuln-card:focus-visible,
+.vendor-card:focus-visible,
+.quote-card:focus-visible,
+.cost-card:focus-visible,
+.incident-card:focus-visible,
+.tab-content:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: 2px;
+}
+
+.tab-content:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: -2px;
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .poll-fill {
+        width: var(--fill);
+    }
+
+    .particle {
+        display: none;
+    }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: rgba(255, 255, 255, 0.3);
+        --text-secondary: #c0c0c5;
+    }
+}
+
+/* ===== TOUCH DEVICES ===== */
+@media (hover: none) and (pointer: coarse) {
+    .vuln-card:hover,
+    .vendor-card:hover,
+    .quote-card:hover,
+    .cost-card:hover {
+        transform: none;
+    }
+
+    .hero-cta:hover {
+        transform: none;
+    }
+}
