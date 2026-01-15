@@ -261,33 +261,42 @@
 
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
-    .hero-content {
-        animation: none;
-    }
-
-    .classification-badge {
-        animation: none;
-    }
-
-    .label-dot {
-        animation: none;
-    }
-
-    .scroll-line {
-        animation: none;
-    }
-
-    .shell-arrow {
-        animation: none;
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 
     .poll-fill {
-        transition: none;
         width: var(--fill);
     }
 
     .particle {
-        animation: none !important;
         display: none;
+    }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: rgba(255, 255, 255, 0.3);
+        --text-secondary: #c0c0c5;
+    }
+}
+
+/* ===== TOUCH DEVICES ===== */
+@media (hover: none) and (pointer: coarse) {
+    .vuln-card:hover,
+    .vendor-card:hover,
+    .quote-card:hover,
+    .cost-card:hover {
+        transform: none;
+    }
+
+    .hero-cta:hover {
+        transform: none;
     }
 }

@@ -76,6 +76,7 @@
 .title-main {
     display: block;
     font-size: clamp(2rem, 6vw, 4.5rem);
+    color: #fff; /* Fallback for browsers that don't support gradient text */
     background: linear-gradient(135deg, #fff 0%, #ccc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -141,6 +142,7 @@
     display: block;
     font-size: 1.5rem;
     font-weight: 800;
+    color: var(--accent-secondary); /* Fallback */
     background: var(--gradient-red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -20,6 +20,7 @@
     right: 0;
     z-index: 1000;
     background: rgba(10, 10, 15, 0.85);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 0;
@@ -122,15 +123,6 @@
 /* Quick Nav (Desktop only) */
 .quick-nav {
     display: none;
-}
-
-/* Cards - Base */
-.card-base {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: var(--card-padding);
-    transition: var(--transition);
 }
 
 /* Threat Card */
@@ -464,6 +456,7 @@
     display: block;
     font-size: 1.5rem;
     font-weight: 800;
+    color: var(--accent-secondary); /* Fallback */
     background: var(--gradient-red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
