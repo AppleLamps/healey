@@ -12,8 +12,47 @@ document.addEventListener('DOMContentLoaded', () => {
     initPollBars();
     initParallax();
     initParticles();
-    console.log('🔒 Opposition Research Dossier - BLUE-WINTER-26 Loaded');
+    initToast();
+    initQuoteCopy();
 });
+
+// ========================================
+// Toast Notification System
+// ========================================
+let toastElement = null;
+let toastTimeout = null;
+
+function initToast() {
+    // Create toast element if it doesn't exist
+    toastElement = document.createElement('div');
+    toastElement.className = 'toast';
+    toastElement.setAttribute('role', 'status');
+    toastElement.setAttribute('aria-live', 'polite');
+    document.body.appendChild(toastElement);
+}
+
+function showToast(message, type = 'success', duration = 3000) {
+    if (!toastElement) return;
+
+    // Clear any existing timeout
+    if (toastTimeout) {
+        clearTimeout(toastTimeout);
+    }
+
+    // Set message and type
+    toastElement.textContent = message;
+    toastElement.className = `toast ${type}`;
+
+    // Show toast
+    requestAnimationFrame(() => {
+        toastElement.classList.add('show');
+    });
+
+    // Hide after duration
+    toastTimeout = setTimeout(() => {
+        toastElement.classList.remove('show');
+    }, duration);
+}
 
 // ========================================
 // Navigation
@@ -23,10 +62,11 @@ function initNavigation() {
     const navLinks = document.getElementById('navLinks');
     const nav = document.getElementById('nav');
 
-    // Mobile toggle
+    // Mobile toggle with accessibility
     navToggle?.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        const isExpanded = navLinks.classList.toggle('active');
         navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isExpanded);
     });
 
     // Close on link click
@@ -34,7 +74,18 @@ function initNavigation() {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             navToggle.classList.remove('active');
+            navToggle?.setAttribute('aria-expanded', 'false');
         });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks?.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            navToggle?.classList.remove('active');
+            navToggle?.setAttribute('aria-expanded', 'false');
+            navToggle?.focus();
+        }
     });
 
     // Navbar background on scroll
@@ -74,8 +125,9 @@ function initProgressBar() {
 
     window.addEventListener('scroll', () => {
         const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrolled = (window.scrollY / windowHeight) * 100;
+        const scrolled = Math.round((window.scrollY / windowHeight) * 100);
         progressBar.style.width = `${scrolled}%`;
+        progressBar.setAttribute('aria-valuenow', scrolled);
     });
 }
 
@@ -113,23 +165,74 @@ function initQuickNav() {
 }
 
 // ========================================
-// Tabs (Fiscal Section)
+// Tabs (Fiscal Section) with Full Accessibility
 // ========================================
 function initTabs() {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
+    const tabList = document.querySelector('.fiscal-tabs');
 
-    tabBtns.forEach(btn => {
+    function activateTab(btn) {
+        const tabId = btn.dataset.tab;
+
+        // Update ARIA states
+        tabBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+            b.setAttribute('tabindex', '-1');
+        });
+
+        tabContents.forEach(c => c.classList.remove('active'));
+
+        // Activate clicked tab
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        btn.setAttribute('tabindex', '0');
+
+        const panel = document.getElementById(tabId);
+        panel?.classList.add('active');
+    }
+
+    tabBtns.forEach((btn, index) => {
+        // Set initial tabindex
+        btn.setAttribute('tabindex', index === 0 ? '0' : '-1');
+
         btn.addEventListener('click', () => {
-            const tabId = btn.dataset.tab;
+            activateTab(btn);
+        });
 
-            // Remove active from all
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
+        // Keyboard navigation for tabs (arrow keys)
+        btn.addEventListener('keydown', (e) => {
+            const tabArray = Array.from(tabBtns);
+            const currentIndex = tabArray.indexOf(btn);
+            let newIndex;
 
-            // Add active to clicked
-            btn.classList.add('active');
-            document.getElementById(tabId)?.classList.add('active');
+            switch (e.key) {
+                case 'ArrowRight':
+                case 'ArrowDown':
+                    e.preventDefault();
+                    newIndex = (currentIndex + 1) % tabArray.length;
+                    tabArray[newIndex].focus();
+                    activateTab(tabArray[newIndex]);
+                    break;
+                case 'ArrowLeft':
+                case 'ArrowUp':
+                    e.preventDefault();
+                    newIndex = (currentIndex - 1 + tabArray.length) % tabArray.length;
+                    tabArray[newIndex].focus();
+                    activateTab(tabArray[newIndex]);
+                    break;
+                case 'Home':
+                    e.preventDefault();
+                    tabArray[0].focus();
+                    activateTab(tabArray[0]);
+                    break;
+                case 'End':
+                    e.preventDefault();
+                    tabArray[tabArray.length - 1].focus();
+                    activateTab(tabArray[tabArray.length - 1]);
+                    break;
+            }
         });
     });
 }
@@ -306,20 +409,20 @@ function animateCounter(element, target, duration = 2000, prefix = '', suffix = 
 }
 
 // ========================================
-// Keyboard Navigation
+// Keyboard Shortcuts
 // ========================================
+// Note: Avoiding Ctrl+T as it conflicts with browser "new tab"
+// Using Alt+T instead for accessibility compliance
 document.addEventListener('keydown', (e) => {
-    // Press 'T' to toggle all tabs
-    if (e.key === 't' && e.ctrlKey) {
+    // Alt+T to toggle all tabs (show all content for printing)
+    if (e.key === 't' && e.altKey) {
         e.preventDefault();
         const tabContents = document.querySelectorAll('.tab-content');
-        tabContents.forEach(tc => tc.classList.toggle('active'));
+        tabContents.forEach(tc => tc.classList.add('active'));
+        showToast('All tabs expanded for viewing');
     }
 
-    // Press 'P' to print
-    if (e.key === 'p' && e.ctrlKey) {
-        // Let default print behavior
-    }
+    // Ctrl+P handled by browser for print
 });
 
 // ========================================
@@ -360,32 +463,65 @@ document.querySelectorAll('section[id]').forEach(section => {
 });
 
 // ========================================
-// Copy Quote to Clipboard
+// Quote Copy with Toast Feedback
 // ========================================
-document.querySelectorAll('.quote-card').forEach(card => {
-    card.style.cursor = 'pointer';
-    card.title = 'Click to copy quote';
+function initQuoteCopy() {
+    document.querySelectorAll('.quote-card').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.setAttribute('role', 'button');
+        card.setAttribute('tabindex', '0');
+        card.title = 'Click or press Enter to copy quote';
 
-    card.addEventListener('click', () => {
-        const quote = card.querySelector('blockquote')?.textContent;
-        const cite = card.querySelector('cite')?.textContent;
+        const copyHandler = async () => {
+            const quote = card.querySelector('blockquote')?.textContent;
+            const cite = card.querySelector('cite')?.textContent;
 
-        if (quote && cite) {
-            const text = `"${quote.trim()}" ${cite}`;
-            navigator.clipboard.writeText(text).then(() => {
-                // Visual feedback
-                const original = card.style.borderColor;
-                card.style.borderColor = '#10b981';
-                card.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.3)';
+            if (quote && cite) {
+                const text = `"${quote.trim()}" ${cite}`;
 
-                setTimeout(() => {
-                    card.style.borderColor = original;
-                    card.style.boxShadow = '';
-                }, 1000);
-            });
-        }
+                try {
+                    // Check if clipboard API is available
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        await navigator.clipboard.writeText(text);
+                        showToast('Quote copied to clipboard!', 'success');
+                    } else {
+                        // Fallback for older browsers
+                        const textarea = document.createElement('textarea');
+                        textarea.value = text;
+                        textarea.style.position = 'fixed';
+                        textarea.style.opacity = '0';
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textarea);
+                        showToast('Quote copied to clipboard!', 'success');
+                    }
+
+                    // Visual feedback
+                    card.style.borderColor = '#10b981';
+                    card.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.3)';
+
+                    setTimeout(() => {
+                        card.style.borderColor = '';
+                        card.style.boxShadow = '';
+                    }, 1000);
+                } catch (err) {
+                    showToast('Failed to copy quote', 'error');
+                }
+            }
+        };
+
+        card.addEventListener('click', copyHandler);
+
+        // Keyboard support (Enter and Space)
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                copyHandler();
+            }
+        });
     });
-});
+}
 
 // ========================================
 // Performance: Lazy load images if any

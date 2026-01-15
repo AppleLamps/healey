@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Comprehensive Opposition Research Dossier on Governor Maura Healey covering fiscal policy, transparency, healthcare, and administrative performance from January 2023 to January 2026.">
+    <meta name="theme-color" content="#0a0a0f">
+    <meta name="color-scheme" content="dark">
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Healey Administration | Opposition Research Dossier">
+    <meta property="og:description" content="Comprehensive Opposition Research Dossier on Governor Maura Healey covering fiscal policy, transparency, healthcare, and administrative performance.">
+    <meta property="og:site_name" content="BLUE-WINTER-26">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Healey Administration | Opposition Research Dossier">
+    <meta name="twitter:description" content="Comprehensive Opposition Research Dossier on Governor Maura Healey.">
     <title>Healey Administration | Opposition Research Dossier</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +26,18 @@
 </head>
 
 <body>
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar"></div>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <nav class="nav" id="nav">
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav" id="nav" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#" class="nav-logo"><span class="logo-icon">⚖</span><span
                     class="logo-text">BLUE-WINTER-26</span></a>
-            <button class="nav-toggle" id="navToggle"
-                aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            <button class="nav-toggle" id="navToggle" type="button"
+                aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#vulnerabilities">Vulnerabilities</a></li>
@@ -78,18 +91,19 @@
     </header>
 
     <!-- Quick Nav -->
-    <div class="quick-nav" id="quickNav">
-        <a href="#overview" class="quick-nav-item" data-section="overview">01</a>
-        <a href="#vulnerabilities" class="quick-nav-item" data-section="vulnerabilities">02</a>
-        <a href="#shelter-crisis" class="quick-nav-item" data-section="shelter-crisis">03</a>
-        <a href="#transparency" class="quick-nav-item" data-section="transparency">04</a>
-        <a href="#fiscal" class="quick-nav-item" data-section="fiscal">05</a>
-        <a href="#justice" class="quick-nav-item" data-section="justice">06</a>
-        <a href="#ethics" class="quick-nav-item" data-section="ethics">07</a>
-        <a href="#quotes" class="quick-nav-item" data-section="quotes">08</a>
-        <a href="#data" class="quick-nav-item" data-section="data">09</a>
-    </div>
+    <nav class="quick-nav" id="quickNav" aria-label="Section navigation">
+        <a href="#overview" class="quick-nav-item" data-section="overview" aria-label="Section 1: Overview">01</a>
+        <a href="#vulnerabilities" class="quick-nav-item" data-section="vulnerabilities" aria-label="Section 2: Vulnerabilities">02</a>
+        <a href="#shelter-crisis" class="quick-nav-item" data-section="shelter-crisis" aria-label="Section 3: Shelter Crisis">03</a>
+        <a href="#transparency" class="quick-nav-item" data-section="transparency" aria-label="Section 4: Transparency">04</a>
+        <a href="#fiscal" class="quick-nav-item" data-section="fiscal" aria-label="Section 5: Fiscal Issues">05</a>
+        <a href="#justice" class="quick-nav-item" data-section="justice" aria-label="Section 6: Justice Crisis">06</a>
+        <a href="#ethics" class="quick-nav-item" data-section="ethics" aria-label="Section 7: Ethics">07</a>
+        <a href="#quotes" class="quick-nav-item" data-section="quotes" aria-label="Section 8: Quotes">08</a>
+        <a href="#data" class="quick-nav-item" data-section="data" aria-label="Section 9: Data">09</a>
+    </nav>
 
+    <main id="main-content">
     <section class="section overview" id="overview">
         <div class="container">
             <div class="section-header"><span class="section-number">01</span>
@@ -558,12 +572,12 @@
                 <h2 class="section-title">Fiscal & Administrative Irregularities</h2>
                 <p class="section-desc">Steward Health Care, Offshore Wind, MBTA</p>
             </div>
-            <div class="fiscal-tabs">
-                <button class="tab-btn active" data-tab="steward">Steward Bailout</button>
-                <button class="tab-btn" data-tab="wind">Offshore Wind</button>
-                <button class="tab-btn" data-tab="mbta">MBTA</button>
+            <div class="fiscal-tabs" role="tablist" aria-label="Fiscal issues categories">
+                <button class="tab-btn active" data-tab="steward" type="button" role="tab" aria-selected="true" aria-controls="steward" id="tab-steward">Steward Bailout</button>
+                <button class="tab-btn" data-tab="wind" type="button" role="tab" aria-selected="false" aria-controls="wind" id="tab-wind">Offshore Wind</button>
+                <button class="tab-btn" data-tab="mbta" type="button" role="tab" aria-selected="false" aria-controls="mbta" id="tab-mbta">MBTA</button>
             </div>
-            <div class="tab-content active" id="steward">
+            <div class="tab-content active" id="steward" role="tabpanel" aria-labelledby="tab-steward" tabindex="0">
                 <h3>The Steward Health Care Bailout: A $700 Million Failure</h3>
                 <p class="tab-intro">The collapse of Steward Health Care is perhaps the <strong>most damning indictment
                         of the administration's regulatory negligence</strong>.</p>
@@ -613,7 +627,7 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="wind">
+            <div class="tab-content" id="wind" role="tabpanel" aria-labelledby="tab-wind" tabindex="0">
                 <h3>The "Commonwealth Wind" Debacle</h3>
                 <p class="tab-intro">The administration's energy policy, centered on offshore wind, has collapsed into a
                     series of broken contracts, penalties, and federal roadblocks.</p>
@@ -652,7 +666,7 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="mbta">
+            <div class="tab-content" id="mbta" role="tabpanel" aria-labelledby="tab-mbta" tabindex="0">
                 <h3>The MBTA: Safety Theater vs. Reality</h3>
                 <p class="tab-intro">While the administration declared "Mission Accomplished" on removing slow zones in
                     late 2024, the system remains <strong>dangerous and unreliable</strong> in 2025.</p>
@@ -1068,6 +1082,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -1085,7 +1100,7 @@
                     <p class="footer-disclaimer">For internal strategic planning purposes only.</p>
                 </div>
                 <div class="footer-actions">
-                    <button class="print-btn" onclick="window.print()">🖨️ Print Report</button>
+                    <button type="button" class="print-btn" onclick="window.print()" aria-label="Print this report">🖨️ Print Report</button>
                     <a href="#hero" class="back-to-top">↑ Back to Top</a>
                 </div>
             </div>
