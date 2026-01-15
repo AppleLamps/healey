@@ -3,6 +3,7 @@
 
 /* ===== TABLET (768px+) ===== */
 @media (min-width: 768px) {
+
     /* Navigation */
     .nav-links {
         display: flex;
@@ -10,12 +11,12 @@
         background: transparent;
         flex-direction: row;
         padding: 0;
-        gap: 1.5rem;
+        gap: 1rem;
         border-bottom: none;
     }
 
     .nav-links a {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         padding: 0.25rem 0;
     }
 
@@ -109,6 +110,7 @@
 
 /* ===== DESKTOP (992px+) ===== */
 @media (min-width: 992px) {
+
     /* Vulnerability Cards */
     .vuln-number {
         font-size: 3rem;
@@ -154,6 +156,7 @@
 
 /* ===== LARGE DESKTOP (1200px+) ===== */
 @media (min-width: 1200px) {
+
     /* Quick Nav */
     .quick-nav {
         position: fixed;
@@ -193,6 +196,7 @@
 
 /* ===== PRINT STYLES ===== */
 @media print {
+
     .nav,
     .quick-nav,
     .hero-cta,
@@ -261,6 +265,7 @@
 
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -289,6 +294,7 @@
 
 /* ===== TOUCH DEVICES ===== */
 @media (hover: none) and (pointer: coarse) {
+
     .vuln-card:hover,
     .vendor-card:hover,
     .quote-card:hover,
@@ -298,5 +304,60 @@
 
     .hero-cta:hover {
         transform: none;
+    }
+}
+
+/* ===== NEW SECTIONS RESPONSIVE ===== */
+@media (max-width: 767px) {
+
+    /* Housing Section */
+    .proposal-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Economic Section */
+    .ranking-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Criminal Defense Section */
+    .contrast-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contrast-vs {
+        margin: 0.5rem 0;
+    }
+
+    .flip-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .flip-arrow {
+        transform: rotate(90deg);
+    }
+
+    /* Rate Cards */
+    .rate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Housing Section */
+    .retaliation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proposal-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Criminal Defense Section */
+    .pay-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

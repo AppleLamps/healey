@@ -76,7 +76,8 @@
 .title-main {
     display: block;
     font-size: clamp(2rem, 6vw, 4.5rem);
-    color: #fff; /* Fallback for browsers that don't support gradient text */
+    color: #fff;
+    /* Fallback for browsers that don't support gradient text */
     background: linear-gradient(135deg, #fff 0%, #ccc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -142,7 +143,8 @@
     display: block;
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--accent-secondary); /* Fallback */
+    color: var(--accent-secondary);
+    /* Fallback */
     background: var(--gradient-red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1043,7 +1045,7 @@
     line-height: 1.6;
 }
 
-.proctor-scandal > h4 {
+.proctor-scandal>h4 {
     margin-bottom: 1rem;
     font-size: 1rem;
 }
@@ -1520,4 +1522,880 @@ tr:hover {
 
 .back-to-top:hover {
     color: var(--accent-secondary);
+}
+
+/* === HOUSING POLICY SECTION === */
+.housing-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.housing-intro {
+    background: rgba(255, 193, 7, 0.05);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.housing-intro p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.mbta-act-section,
+.retaliation-section,
+.housing-proposals,
+.prop-2-attack {
+    margin-bottom: 2.5rem;
+}
+
+.mbta-act-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.mbta-act-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.mbta-act-card.warning {
+    border-color: rgba(220, 53, 69, 0.3);
+    background: rgba(220, 53, 69, 0.05);
+}
+
+.act-stat {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+}
+
+.mbta-act-card.warning .act-stat {
+    color: var(--accent-secondary);
+}
+
+.act-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.retaliation-intro {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.retaliation-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.retaliation-card {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.town-name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.retaliation-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.punishment {
+    color: var(--accent-secondary);
+    font-weight: 600;
+}
+
+.reason {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.proposal-cards {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.proposal-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.proposal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.proposal-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.proposal-rate {
+    background: rgba(255, 193, 7, 0.15);
+    color: var(--accent-gold);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.proposal-desc {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.proposal-problem {
+    background: rgba(220, 53, 69, 0.1);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.problem-icon {
+    font-size: 1.25rem;
+}
+
+.prop-warning-box {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.prop-warning-box .warning-icon {
+    font-size: 1.5rem;
+}
+
+.prop-content p {
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.tax-proposals h4 {
+    margin-bottom: 1rem;
+}
+
+.tax-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.tax-item {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    text-align: center;
+}
+
+.tax-type {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.tax-change {
+    display: block;
+    font-weight: 700;
+    color: var(--accent-secondary);
+}
+
+/* === ECONOMIC DECLINE SECTION === */
+.economic-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.economic-intro {
+    background: rgba(220, 53, 69, 0.08);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.economic-intro p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.economic-rankings,
+.job-loss-section,
+.business-closures,
+.millionaire-tax-misuse {
+    margin-bottom: 2.5rem;
+}
+
+.ranking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.ranking-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.ranking-card.critical {
+    border-color: rgba(220, 53, 69, 0.5);
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.ranking-position {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-secondary);
+}
+
+.ranking-card.critical .ranking-position {
+    font-size: 2.5rem;
+}
+
+.ranking-metric {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ranking-category {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 0.5rem;
+}
+
+.ranking-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.jobs-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.jobs-stat {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.jobs-stat.negative {
+    border-color: rgba(220, 53, 69, 0.5);
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.jobs-stat.government {
+    border-color: rgba(255, 193, 7, 0.3);
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.jobs-icon {
+    font-size: 2rem;
+}
+
+.jobs-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.jobs-stat.negative .jobs-number {
+    color: var(--accent-secondary);
+}
+
+.jobs-stat.government .jobs-number {
+    color: var(--accent-gold);
+}
+
+.jobs-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.jobs-cost {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.jobs-contrast {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-md);
+}
+
+.closures-stat {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.closures-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent-secondary);
+}
+
+.closures-label {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.exodus-quote blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    border-left: 3px solid var(--accent-secondary);
+    padding-left: 1rem;
+}
+
+.tax-misuse-box {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.tax-misuse-box p {
+    margin-bottom: 0.75rem;
+}
+
+.misuse-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.misuse-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.misuse-list li:last-child {
+    border-bottom: none;
+}
+
+.misuse-icon {
+    font-size: 1.25rem;
+}
+
+/* === CRIMINAL DEFENSE SECTION === */
+.defense-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.defense-intro {
+    background: rgba(220, 53, 69, 0.08);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.defense-intro p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.lavali-section,
+.pay-crisis,
+.rainy-day-contrast,
+.cybersecurity-negligence {
+    margin-bottom: 2.5rem;
+}
+
+.lavali-explanation {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.lavali-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.lavali-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lavali-time {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+}
+
+.lavali-condition {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.lavali-result {
+    font-size: 0.9rem;
+    color: var(--accent-secondary);
+    font-weight: 600;
+}
+
+.lavali-impact {
+    background: rgba(220, 53, 69, 0.1);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.lavali-impact .impact-icon {
+    font-size: 1.25rem;
+}
+
+.pay-comparison h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.pay-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.pay-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pay-card.ma {
+    border-color: rgba(220, 53, 69, 0.5);
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.pay-card.other {
+    border-color: rgba(34, 197, 94, 0.3);
+    background: rgba(34, 197, 94, 0.05);
+}
+
+.state-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.pay-rate {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.pay-card.ma .pay-rate {
+    color: var(--accent-secondary);
+}
+
+.pay-card.other .pay-rate {
+    color: #22c55e;
+}
+
+.pay-rank {
+    font-size: 0.75rem;
+    color: var(--accent-secondary);
+    font-weight: 600;
+}
+
+.pay-gap {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(220, 53, 69, 0.1);
+    border-radius: var(--radius-md);
+}
+
+.gap-label {
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.gap-amount {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-secondary);
+}
+
+.contrast-box {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contrast-left,
+.contrast-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contrast-icon {
+    font-size: 2rem;
+}
+
+.contrast-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.contrast-left .contrast-value {
+    color: var(--accent-gold);
+}
+
+.contrast-right .contrast-value {
+    color: var(--accent-secondary);
+}
+
+.contrast-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.contrast-vs {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-muted);
+}
+
+.contrast-note {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.cyber-box {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.cyber-impact {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    margin: 1rem 0;
+}
+
+.cyber-stat {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--accent-secondary);
+}
+
+.cyber-label {
+    color: var(--text-secondary);
+}
+
+.cyber-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* === ENERGY TAB EXPANDED === */
+.mass-save-section {
+    margin-bottom: 2rem;
+}
+
+.mass-save-problem {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.mass-save-intro {
+    margin-bottom: 1rem;
+}
+
+.mass-save-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.mass-save-card {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mass-save-card.highlight {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.save-icon {
+    font-size: 1.5rem;
+}
+
+.save-stat {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.rate-hikes-section {
+    margin-bottom: 2rem;
+}
+
+.rate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.rate-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.rate-card.critical {
+    border-color: rgba(220, 53, 69, 0.5);
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.rate-type {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.rate-increase {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--accent-secondary);
+}
+
+.rate-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.net-zero-cost {
+    margin-bottom: 2rem;
+}
+
+.net-zero-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--gradient-red);
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+}
+
+.net-zero-amount {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.net-zero-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.healey-flip-flop {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.healey-flip-flop h5 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.flip-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.flip-before,
+.flip-after {
+    text-align: center;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+}
+
+.flip-before {
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.flip-after {
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.flip-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.flip-before p {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.flip-after p {
+    color: var(--accent-secondary);
+    font-weight: 600;
+}
+
+.flip-arrow {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+
+.flip-note {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+/* === PUBLIC HEALTH FAILURES === */
+.public-health-failures {
+    margin-top: 2rem;
+}
+
+.health-failure-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.health-failure-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.health-failure-card.severe {
+    border-color: rgba(220, 53, 69, 0.5);
+    background: rgba(220, 53, 69, 0.05);
+}
+
+.health-failure-card.warning {
+    border-color: rgba(255, 193, 7, 0.3);
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.failure-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.health-failure-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.health-failure-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
 }
