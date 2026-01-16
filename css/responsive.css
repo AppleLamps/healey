@@ -341,6 +341,33 @@
     }
 }
 
+/* ===== MOBILE SCROLL INDICATOR FIX ===== */
+/* Hide scroll indicator on mobile to prevent clash with CTA button */
+@media (max-width: 767px) {
+    .scroll-indicator {
+        display: none;
+    }
+
+    .hero {
+        padding-bottom: 3rem;
+    }
+
+    .hero-cta {
+        margin-bottom: 0;
+    }
+}
+
+/* Show scroll indicator only on tablets and larger screens */
+@media (min-width: 768px) {
+    .scroll-indicator {
+        display: flex;
+    }
+
+    .hero {
+        padding-bottom: 6rem;
+    }
+}
+
 /* ===== NEW SECTIONS RESPONSIVE ===== */
 @media (max-width: 767px) {
 
