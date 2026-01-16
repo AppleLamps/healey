@@ -528,6 +528,9 @@
     font-size: 0.85rem;
     color: var(--text-muted);
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .vendor-issues {
@@ -631,7 +634,9 @@
 }
 
 .incident-location {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--accent-gold);

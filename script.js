@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initPollBars();
     initParallax();
-    initParticles();
+    // initParticles(); // Removed for professional UI
     initToast();
     initQuoteCopy();
 });
